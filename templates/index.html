@@ -1,0 +1,20 @@
+<!--index.html-->
+
+<!--Embed the header.html template at this location-->
+{{ template "header.html" .}}
+
+
+  <h1>Input some text here</h1>
+
+  <form method="POST" id="inputForm" action="/next">
+
+    <!-- <label for="message">Message</label> -->
+    
+    <input id="message" name="text_input" placeholder="Ex. Hello World" type="text"></br></br>
+    <button type="submit" style="width:100px;">Submit</button></br></br>
+    <a href="next.html">Link to the next page</a>
+  </form> 
+  
+
+<!--Embed the footer.html template at this location-->
+{{ template "footer.html" .}}
